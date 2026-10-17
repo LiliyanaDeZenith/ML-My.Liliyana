@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>L / My Liliyana</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header class="side">
+<button class="logo" data-v="home">L</button>
+<nav id="nav"></nav>
+<button class="post-btn" id="openCompose">Posting</button>
+<div id="mn" hidden></div><div class="me" id="me" data-m></div>
+</header>
+<main>
+<div class="top"><h2 id="title"></h2><button class="ab" id="th" title="Latar hitam / terang"></button>
+<div class="tabs" id="tabs"><button class="on" data-t="fy">Untuk Anda</button><button data-t="fl">Mengikuti</button></div></div>
+<section id="home">
+<div class="compose"><div id="cav"></div><div class="cbox"><div class="ph" id="rp" hidden></div><div class="ph" id="qv" hidden></div><textarea id="txt" maxlength="280" rows="2" placeholder="Apa yang sedang terjadi?"></textarea><div id="pv" class="ph" hidden></div><input type="file" id="file" accept="image/*,video/*" hidden><div class="crow"><button class="ab" id="att" title="Foto atau video"></button><span id="cnt"></span><div class="ring" id="ring"></div><button class="post-btn sm" id="send" disabled>Posting</button></div></div></div>
+<div id="feed"></div>
+</section>
+<section id="ai" hidden><div class="aibar"><span class="ph">Kalau kosong, ketuk Layar penuh</span><button class="fl" id="full">Layar penuh</button></div><iframe id="aiFrame" title="Cahy AI" allow="clipboard-write; microphone"></iframe></section>
+</main>
+<aside class="right">
+<div class="sb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 3a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM21 21l-4.35-4.35"/></svg><input id="q" placeholder="Cari"></div>
+<div class="box"><h3>Yang sedang tren</h3><div id="trends"></div></div>
+<div class="box"><h3>Siapa yang diikuti</h3><div id="wtf"></div></div>
+</aside>
+</div>
+<div id="rm" hidden></div><div id="ep" hidden><div class="ac"><h2>Edit profil</h2><button class="fl on" id="epp">Ganti foto profil</button><button class="fl on" id="epb">Ganti banner (foto/video)</button><div class="ph" id="epv"></div><input id="en" placeholder="Nama tampilan" maxlength="30"><input id="eb" placeholder="Bio" maxlength="120"><button class="post-btn" id="eps">Simpan</button><button class="fl on" id="epc">Batal</button></div></div>
+<div id="auth" hidden><div class="ac"><h2 id="at"></h2><input id="au" placeholder="Nama pengguna" autocomplete="username" autocapitalize="none"><input id="an" placeholder="Nama tampilan" hidden><input id="ap" type="password" placeholder="Kata sandi" autocomplete="current-password"><div class="ae" id="ae"></div><button class="post-btn" id="ago">Masuk</button><button class="fl on" id="asw"></button><button class="fl on" id="acl" hidden>Tutup</button></div></div>
+<script src="app.js"></script>
+</body>
+</html>
